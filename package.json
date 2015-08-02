@@ -1,6 +1,9 @@
 {
-  "name": "",
-  "version": "",
+  "name": "pandaas",
+  "version": "0.0.1",
+  "scripts" : {
+    "start": "gulp && node index.js"
+  },
   "dependencies": {
     "angular": "^1.4.3",
     "babel": "^5.8.20",

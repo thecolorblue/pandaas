@@ -75,6 +75,10 @@ gulp.task('less', function () {
 });
 
 gulp.task('default', function() {
+  runSequence(['app', 'less']);
+});
+
+gulp.task('watch', function() {
   runSequence(
     ['app', 'less'],
     function() {

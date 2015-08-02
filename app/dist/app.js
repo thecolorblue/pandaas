@@ -38845,6 +38845,25 @@
 
 	
 	angular.module('pandoc')
+	  .controller('appController', [
+	  '$scope',
+	  function ($scope) {
+	    $scope.editorText = '';
+	
+	    $scope.$watch('file', function(value) {
+	      if(value && typeof value === 'string') {
+	        $scope.editorText = value;
+	      }
+	    });
+	  }]);
+
+
+/***/ },
+/* 7 */
+/***/ function(module, exports) {
+
+	
+	angular.module('pandoc')
 	  .service('pandoc', ['$http', function($http) {
 	  	return {
 	      export: function(text, format){
@@ -38865,25 +38884,6 @@
 	          .error(function(){});
 	      }
 	    }
-	  }]);
-
-
-/***/ },
-/* 7 */
-/***/ function(module, exports) {
-
-	
-	angular.module('pandoc')
-	  .controller('appController', [
-	  '$scope',
-	  function ($scope) {
-	    $scope.editorText = '';
-	
-	    $scope.$watch('file', function(value) {
-	      if(value && typeof value === 'string') {
-	        $scope.editorText = value;
-	      }
-	    });
 	  }]);
 
 
