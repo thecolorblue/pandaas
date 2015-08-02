@@ -1,0 +1,84 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/Beegit/.nvm/v0.10.38/bin/node',
+1 verbose cli   '/Users/Beegit/.nvm/v0.10.38/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'ng-cache',
+1 verbose cli   '--save' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.38
+4 warn package.json @ No description
+5 warn package.json @ No repository field.
+6 warn package.json @ No README data
+7 verbose readDependencies using package.json deps
+8 verbose cache add [ 'ng-cache', null ]
+9 verbose cache add name=undefined spec="ng-cache" args=["ng-cache",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'ng-cache',
+10 verbose parsed url   path: 'ng-cache',
+10 verbose parsed url   href: 'ng-cache' }
+11 silly lockFile f2a95897-ng-cache ng-cache
+12 verbose lock ng-cache /Users/Beegit/.npm/f2a95897-ng-cache.lock
+13 silly lockFile f2a95897-ng-cache ng-cache
+14 silly lockFile f2a95897-ng-cache ng-cache
+15 verbose addNamed [ 'ng-cache', '' ]
+16 verbose addNamed [ null, '*' ]
+17 silly lockFile f9a55055-ng-cache ng-cache@
+18 verbose lock ng-cache@ /Users/Beegit/.npm/f9a55055-ng-cache.lock
+19 silly addNameRange { name: 'ng-cache', range: '*', hasData: false }
+20 verbose request where is /ng-cache
+21 verbose request registry http://registry.beegit.com/
+22 verbose request id 9fbc4468b8e5052c
+23 verbose url raw /ng-cache
+24 verbose url resolving [ 'http://registry.beegit.com/', './ng-cache' ]
+25 verbose url resolved http://registry.beegit.com/ng-cache
+26 verbose request where is http://registry.beegit.com/ng-cache
+27 info trying registry request attempt 1 at 09:07:29
+28 http GET http://registry.beegit.com/ng-cache
+29 http 404 http://registry.beegit.com/ng-cache
+30 verbose headers { 'x-powered-by': 'Sinopia/1.0.0',
+30 verbose headers   'content-type': 'application/json; charset=utf-8',
+30 verbose headers   'content-length': '43',
+30 verbose headers   etag: 'W/"2b-d418f262"',
+30 verbose headers   vary: 'Accept-Encoding',
+30 verbose headers   'x-status-cat': 'http://flic.kr/p/aV6juR',
+30 verbose headers   date: 'Sat, 01 Aug 2015 13:07:31 GMT',
+30 verbose headers   connection: 'keep-alive' }
+31 silly registry.get cb [ 404,
+31 silly registry.get   { 'x-powered-by': 'Sinopia/1.0.0',
+31 silly registry.get     'content-type': 'application/json; charset=utf-8',
+31 silly registry.get     'content-length': '43',
+31 silly registry.get     etag: 'W/"2b-d418f262"',
+31 silly registry.get     vary: 'Accept-Encoding',
+31 silly registry.get     'x-status-cat': 'http://flic.kr/p/aV6juR',
+31 silly registry.get     date: 'Sat, 01 Aug 2015 13:07:31 GMT',
+31 silly registry.get     connection: 'keep-alive' } ]
+32 silly lockFile f9a55055-ng-cache ng-cache@
+33 silly lockFile f9a55055-ng-cache ng-cache@
+34 error Error: no such package available : ng-cache
+34 error     at RegClient.<anonymous> (/Users/Beegit/.nvm/v0.10.38/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:308:14)
+34 error     at Request._callback (/Users/Beegit/.nvm/v0.10.38/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:246:65)
+34 error     at Request.self.callback (/Users/Beegit/.nvm/v0.10.38/lib/node_modules/npm/node_modules/request/request.js:236:22)
+34 error     at Request.emit (events.js:98:17)
+34 error     at Request.<anonymous> (/Users/Beegit/.nvm/v0.10.38/lib/node_modules/npm/node_modules/request/request.js:1142:14)
+34 error     at Request.emit (events.js:117:20)
+34 error     at IncomingMessage.<anonymous> (/Users/Beegit/.nvm/v0.10.38/lib/node_modules/npm/node_modules/request/request.js:1096:12)
+34 error     at IncomingMessage.emit (events.js:117:20)
+34 error     at _stream_readable.js:944:16
+34 error     at process._tickCallback (node.js:448:13)
+35 error If you need help, you may report this *entire* log,
+35 error including the npm and node versions, at:
+35 error     <http://github.com/npm/npm/issues>
+36 error System Darwin 14.3.0
+37 error command "/Users/Beegit/.nvm/v0.10.38/bin/node" "/Users/Beegit/.nvm/v0.10.38/bin/npm" "install" "ng-cache" "--save"
+38 error cwd /Users/Beegit/Dev/bg-pandoc
+39 error node -v v0.10.38
+40 error npm -v 1.4.28
+41 verbose exit [ 1, true ]

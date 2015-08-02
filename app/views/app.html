@@ -1,0 +1,35 @@
+<div class="col-sm-2 col-xs-12">
+  <!-- import buttons -->
+  <div class="form-group">
+    <select ng-options="option for option in ['docbook', 'docx', 'epub', 'haddock', 'html', 'json', 'latex', 'markdown',
+                  'markdown_github', 'markdown_mmd', 'markdown_phpextra',
+                  'markdown_strict', 'mediawiki', 'native', 'opml', 'org', 'rst', 't2t',
+                  'textile', 'twiki']" ng-model="importFormat"></select>
+  </div>
+  <div class="form-group">
+    <input type="file" pd-upload="file" pd-format="importFormat"/>
+  </div>
+</div>
+<div class="col-sm-8 col-xs-12">
+  <!-- text editor -->
+  <form>
+    <div class="form-group">
+      <label for="editorText">Markdown</label>
+      <textarea name="editorText" class="form-control" rows="3" ng-model="editorText"></textarea>
+    </div>
+  </form>
+</div>
+<div class="col-sm-2 col-xs-12">
+  <!-- export buttons -->
+  <div class="form-group">
+    <select ng-options="option for option in ['asciidoc', 'beamer', 'context', 'docbook', 'docx', 'dokuwiki', 'dzslides',
+                  'epub', 'epub3', 'fb2', 'haddock', 'html', 'html5', 'icml', 'json', 'latex', 'man',
+                  'markdown', 'markdown_github', 'markdown_mmd', 'markdown_phpextra',
+                  'markdown_strict', 'mediawiki', 'native', 'odt', 'opendocument', 'opml',
+                  'org', 'pdf', 'plain', 'revealjs', 'rst', 'rtf', 's5', 'slideous', 'slidy',
+                  'texinfo', 'textile']" ng-model="exportFormat"></select>
+  </div>
+  <div class="form-group">
+    <button class="btn btn-primary" pd-export="editorText" pd-format="exportFormat">export</button>
+  </div>
+</div>
