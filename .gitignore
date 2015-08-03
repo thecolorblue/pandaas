@@ -1,3 +1,4 @@
 tmp/*
 files/*
 node_modules
+npm-debug.log
